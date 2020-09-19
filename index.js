@@ -35,7 +35,6 @@ app.get("/api/suggestions", async(req, res) => {
 });
 
 app.get("/api/search", async(req, res) => {
-    console.log(req.headers["accept-language"]);
     if (typeof req.query.q === "string") {
         var html = await fetch("https://html.duckduckgo.com/html/", {
             method: "POST",
