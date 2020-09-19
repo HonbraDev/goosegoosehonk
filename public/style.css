@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500|Material+Icons");
+body {
+  font-family: "Manrope", "Roboto", sans-serif;
+}
+
+.main-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  padding: 20px;
+}
+
+.main-wrapper .logo-text {
+  font-size: 40px;
+  margin-top: -10px;
+}
+
+.main-wrapper .logo {
+  width: 100px;
+}
+
+.main-wrapper .searchbox {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 24px;
+  overflow: hidden;
+  -webkit-transition: border-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: border-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s, border-color 0.2s, -webkit-box-shadow 0.2s;
+  border: 1px solid lightgray;
+}
+
+.main-wrapper .searchbox #search {
+  border: none;
+  outline: none;
+  height: 46px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.main-wrapper .searchbox .search {
+  padding: 11px;
+  color: gray;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main-wrapper .searchbox:hover, .main-wrapper .searchbox:focus-within {
+  -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: transparent;
+}
+
+.main-wrapper.top {
+  border-bottom: 1px solid lightgray;
+  top: 0;
+  -webkit-transition: border-bottom 0.5s, top 0.5s, -webkit-transform 0.5s;
+  transition: border-bottom 0.5s, top 0.5s, -webkit-transform 0.5s;
+  transition: border-bottom 0.5s, top 0.5s, transform 0.5s;
+  transition: border-bottom 0.5s, top 0.5s, transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.main-wrapper.top .logo-text,
+.main-wrapper.top .motto {
+  font-size: 0;
+  margin: 0;
+  -webkit-transition: font-size 0.5s, margin 0.5s;
+  transition: font-size 0.5s, margin 0.5s;
+}
+
+.main-wrapper.top .searchbox {
+  margin-top: -20px;
+  -webkit-transition: margin-top 0.5s, border-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: margin-top 0.5s, border-color 0.2s, -webkit-box-shadow 0.2s;
+  transition: margin-top 0.5s, box-shadow 0.2s, border-color 0.2s;
+  transition: margin-top 0.5s, box-shadow 0.2s, border-color 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.main-wrapper.top .logo {
+  width: 0;
+  -webkit-transition: width 0.5s, height 0.5s;
+  transition: width 0.5s, height 0.5s;
+}
+
+.results {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+  max-width: 750px;
+  display: none;
+}
+
+.results #answer {
+  padding: 20px;
+  border-radius: 8px;
+  display: none;
+}
+
+.results #answer .image {
+  float: right;
+  width: 100px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.results #answer .title {
+  font-size: 1.75rem;
+}
+
+.results #answer .entity {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.results #answer.show {
+  display: block;
+}
+
+.results #results .result {
+  display: block;
+  color: black;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+
+.results #results .result .title {
+  font-size: 1.25rem;
+  color: black;
+}
+
+.results #results .result .url {
+  color: green;
+}
+
+.results #results .result .snippet {
+  color: gray;
+}
+
+.results #results .result:hover, .results #results .result:focus {
+  border: 1px solid lightgray;
+}
+
+.results.show {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

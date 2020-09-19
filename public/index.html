@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GooseGooseHonk</title>
+
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <form class="main-wrapper" onsubmit="searchboxsearch(); return false">
+        <img src="goose.svg" class="logo" />
+        <h1 class="logo-text">GooseGooseHonk</h1>
+        <div class="searchbox">
+            <input class="browser-default" type="text" id="search" autocomplete="off" autofocus name="q">
+            <i class="material-icons waves-effect search">search</i>
+        </div>
+        <p class="motto">Tracking was never an option.</p>
+    </form>
+
+    <div class="results">
+        <div class="card" id="answer">
+
+        </div>
+        <div id="results"></div>
+    </div>
+
+</body>
+
+</html>

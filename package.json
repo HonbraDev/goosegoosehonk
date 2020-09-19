@@ -1,0 +1,27 @@
+{
+    "name": "goosegoosehonk",
+    "version": "1.0.0",
+    "description": "DuckDuckGo Improvement",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HonbraOfficial/goosegoosehonk.git"
+    },
+    "author": "Honbra",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/HonbraOfficial/goosegoosehonk/issues"
+    },
+    "homepage": "https://github.com/HonbraOfficial/goosegoosehonk#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "fs": "0.0.1-security",
+        "jsdom": "^16.4.0",
+        "node-fetch": "^2.6.1"
+    }
+}
