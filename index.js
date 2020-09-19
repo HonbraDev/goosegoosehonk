@@ -5,7 +5,7 @@ const express = require("express"),
     app = express(),
     { JSDOM } = require("jsdom");
 
-var port = 80;
+var port = process.env.PORT | 80;
 
 app.use(cors());
 app.use(express.static("public"));
