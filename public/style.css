@@ -51,6 +51,7 @@ body {
 
 .main-wrapper .searchbox .search {
   padding: 11px;
+  padding-right: 15px;
   color: gray;
   cursor: pointer;
   -webkit-user-select: none;
@@ -101,7 +102,7 @@ body {
 .results {
   margin: 0 auto;
   margin-top: 100px;
-  width: 100%;
+  width: calc(100% - 20px);
   max-width: 750px;
   display: none;
 }
@@ -156,7 +157,8 @@ body {
 }
 
 .results #results .result:hover, .results #results .result:focus {
-  border: 1px solid lightgray;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .results.show {
